@@ -1,0 +1,151 @@
+{
+  "package": "hardpair_results_package.zip",
+  "file_count_excluding_manifest": 29,
+  "files": [
+    {
+      "path": "compute_memory_and_timing.csv",
+      "sha256": "8743523f28456a74a5e88dedbee6283c4c512fe461114c5bc716c8ae6fd38df1",
+      "bytes": 1343
+    },
+    {
+      "path": "compute_memory_and_timing.json",
+      "sha256": "e675f046bfa52f0f0696c1e5d59410ea21c03cbb6dc831ea3fa6c5089361f4a1",
+      "bytes": 2710
+    },
+    {
+      "path": "confusion_matrices.csv",
+      "sha256": "c3cdd31dc607828834fe828d4ead341df7849f9c922006404e8e9d5f27b3dea3",
+      "bytes": 1067
+    },
+    {
+      "path": "confusion_matrices.json",
+      "sha256": "aa59f6df0fdefa4aa21b68c314a576fe0359fdde36d12ccf3d834a0883b1b4b7",
+      "bytes": 3194
+    },
+    {
+      "path": "confusion_matrices.png",
+      "sha256": "b7849108546f8342460ef63e8da39737d87a9ee5a8953b5458cb43436fa85d5f",
+      "bytes": 154380
+    },
+    {
+      "path": "epoch_training_history.csv",
+      "sha256": "9a840345ee9636750cad96f15a6102b91c649eac5c1b6dc238055cb9dda2164b",
+      "bytes": 2871
+    },
+    {
+      "path": "epoch_training_history.json",
+      "sha256": "20909c0a6642e9b2cd958ecb2639375c14a30ad030f703a4a606d7e1935d9cbe",
+      "bytes": 7425
+    },
+    {
+      "path": "gate_and_prediction_changes.png",
+      "sha256": "547c13c47d23034553f5f1e8349556052bede12e9da78191534512f5e12a4e9d",
+      "bytes": 60326
+    },
+    {
+      "path": "gate_and_transition_diagnostics.json",
+      "sha256": "878511935dd1ad39123c20ce2b1fced13b32666c5189a2adc8d41abc75f2c903",
+      "bytes": 1990
+    },
+    {
+      "path": "held_out_test_predictions.csv",
+      "sha256": "3845e22152de20ae25ecd40fc93daa72ba81ad189dbe6be93ca0ffd0445050b4",
+      "bytes": 433018
+    },
+    {
+      "path": "model_parameter_count_details.json",
+      "sha256": "e53ce5448662d0dacdf164722fee8490dbfbdf93c1c8041b7aa5aea2457ff96c",
+      "bytes": 1364
+    },
+    {
+      "path": "model_parameter_counts.csv",
+      "sha256": "72c7bdfda9df1d3077d754b63825c678d9dab5d2b7ebe3324515c37fb79933a1",
+      "bytes": 388
+    },
+    {
+      "path": "per_class_metrics.csv",
+      "sha256": "235c96ba773eb61fdf5f3e3537442effebcb5e668c0ad944fae35ad7c5a344ff",
+      "bytes": 2017
+    },
+    {
+      "path": "per_class_metrics.json",
+      "sha256": "a963d74cdcf15e35236a03d12b91f5c554e2e0e5b53187048093834c1d68fe60",
+      "bytes": 4588
+    },
+    {
+      "path": "README.md",
+      "sha256": "5fa6774093203d4bc3d49d8e4ab56e610dadcf31cb9586b2201104a5ec126bac",
+      "bytes": 2510
+    },
+    {
+      "path": "source_artifact_checksums.json",
+      "sha256": "fe991c6ba6ed09c2420f6569268644a1d7c6d1e1dafdd1d2ef57e58f9ea72913",
+      "bytes": 2062
+    },
+    {
+      "path": "test_bootstrap_comparisons.csv",
+      "sha256": "8dfb4dc2b69e7b7ee4babe5b72c893df1120a74d253cacdab238da6fa40ac39c",
+      "bytes": 484
+    },
+    {
+      "path": "test_gate_alpha.csv",
+      "sha256": "2243e5dc95c0cc3691265033505ee1b4d75e29ee1843a1e071646bc1bd59526c",
+      "bytes": 40362
+    },
+    {
+      "path": "test_gate_distribution.json",
+      "sha256": "cc391df4aa0066e57388e06855f99c4261521190240e852ca359b37c0f89ddd5",
+      "bytes": 374
+    },
+    {
+      "path": "test_prediction_change_summary.csv",
+      "sha256": "838e2f2fcdc221f656d66d5245353f769dd44148e11e7eab9ec7c6ec9d03e9b3",
+      "bytes": 244
+    },
+    {
+      "path": "test_prediction_changes.csv",
+      "sha256": "1d967dd749de2c4b8bdcc6007fe023d2faf4ca0a3dd597e5fb0b257f9137172f",
+      "bytes": 95395
+    },
+    {
+      "path": "test_prediction_changes_only.csv",
+      "sha256": "450b3efaa6d8792561cd8ca7e1b21c5b21154da1098cddd1ed8cd2b632437f59",
+      "bytes": 694
+    },
+    {
+      "path": "training_history.png",
+      "sha256": "7f175e2a7ac99be40c3698b6d9691c29fd609edd2ff0d25492e6c73890387473",
+      "bytes": 204226
+    },
+    {
+      "path": "unrecoverable_melanoma_counts.csv",
+      "sha256": "fd4b0a6b9daf782caacc01221397e0ea0d95f27642acdae118b21bc4f931cfe0",
+      "bytes": 255
+    },
+    {
+      "path": "validation_bootstrap_comparisons.csv",
+      "sha256": "81cfe9ddd9cdb6fe864a648baf815dcd32360fbf4b061dffd30639f1d4643448",
+      "bytes": 1685
+    },
+    {
+      "path": "validation_fusion_prediction_transitions.png",
+      "sha256": "d480189eab7cc54516878dc46ecfd1a57ec5a5dff406617d900d2eb1d025365d",
+      "bytes": 49390
+    },
+    {
+      "path": "validation_gate_alpha_distribution.png",
+      "sha256": "00a9f8084cbc1066480509aaa2145695398b76b10a5536aaf54c742be0ec72c8",
+      "bytes": 56287
+    },
+    {
+      "path": "validation_mel_nv_confusion_matrices.png",
+      "sha256": "5caf2824ee4598a1784776d0c1f5163d4eca2a4ac4ea22331932440a53ce29a5",
+      "bytes": 27946
+    },
+    {
+      "path": "validation_probability_changes.png",
+      "sha256": "2b807fa26fcb8b463c4951b34d3c45669042dd616ce865334d0b327e0970b8e5",
+      "bytes": 110303
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "mel_logit_delta": -0.08260493725538254,
+  "conditional_log_odds_delta": 0.06201150268316269,
+  "fit_images": 992,
+  "fit_pair_images": 762,
+  "fit_partition": "HAM10000 fusion"
+}

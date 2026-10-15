@@ -1,0 +1,73 @@
+{
+  "partition": "held_out_test",
+  "gate_distribution": {
+    "partition": "held_out_test",
+    "images": 1010,
+    "lesions": 747,
+    "mean": 0.4521617293357849,
+    "standard_deviation": 0.14648617804050446,
+    "minimum": 0.07667773216962814,
+    "p05": 0.16240078955888748,
+    "p25": 0.3355919048190117,
+    "median": 0.5297475457191467,
+    "p75": 0.5721662640571594,
+    "p95": 0.5783059686422348,
+    "maximum": 0.5794432759284973
+  },
+  "prediction_changes": [
+    {
+      "candidate": "fixed_fusion",
+      "reference": "auxiliary_only",
+      "label_changes": 3,
+      "wrong_to_correct": 1,
+      "correct_to_wrong": 1,
+      "mel_to_nv": 2,
+      "nv_to_mel": 0,
+      "changes_on_true_mel": 1,
+      "changes_on_true_nv": 1,
+      "changes_on_true_offpair": 1
+    },
+    {
+      "candidate": "learned_fusion",
+      "reference": "auxiliary_only",
+      "label_changes": 1,
+      "wrong_to_correct": 0,
+      "correct_to_wrong": 0,
+      "mel_to_nv": 0,
+      "nv_to_mel": 0,
+      "changes_on_true_mel": 0,
+      "changes_on_true_nv": 0,
+      "changes_on_true_offpair": 1
+    }
+  ],
+  "unrecoverable_melanoma": [
+    {
+      "model": "baseline",
+      "partition": "held_out_test",
+      "melanoma_support": 125,
+      "unrecoverable_melanoma_count": 16,
+      "unrecoverable_melanoma_rate": 0.128
+    },
+    {
+      "model": "auxiliary_only",
+      "partition": "held_out_test",
+      "melanoma_support": 125,
+      "unrecoverable_melanoma_count": 19,
+      "unrecoverable_melanoma_rate": 0.152
+    },
+    {
+      "model": "fixed_fusion",
+      "partition": "held_out_test",
+      "melanoma_support": 125,
+      "unrecoverable_melanoma_count": 19,
+      "unrecoverable_melanoma_rate": 0.152
+    },
+    {
+      "model": "learned_fusion",
+      "partition": "held_out_test",
+      "melanoma_support": 125,
+      "unrecoverable_melanoma_count": 19,
+      "unrecoverable_melanoma_rate": 0.152
+    }
+  ]
+}

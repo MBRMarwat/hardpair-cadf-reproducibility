@@ -1,0 +1,17 @@
+device: cuda
+paths:
+  output_dir: analysis_and_results/smoke
+model:
+  pretrained: false
+training:
+  stage1_epochs: 1
+  stage2_epochs: 1
+  stage3_epochs: 1
+  stage4_epochs: 1
+  stage5_epochs: 1
+  checkpoint_interval_seconds: 2
+evaluation:
+  bootstrap_resamples: 50
+smoke:
+  enabled: true
+  max_images: 100

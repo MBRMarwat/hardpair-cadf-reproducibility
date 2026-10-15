@@ -1,0 +1,8 @@
+{
+  "device": "cuda",
+  "device_name": "NVIDIA GeForce GTX 1050",
+  "training_and_evaluation_seconds_current_session": 1962.0470000000005,
+  "peak_gpu_memory_bytes": 255915520,
+  "epochs_in_history": 20,
+  "smoke": false
+}

@@ -1,0 +1,9 @@
+dataset,decision_category,images,rate
+HAM10000_test,wrong_pair_prefers_nv,60,0.48
+HAM10000_test,correct_mel,51,0.408
+HAM10000_test,wrong_prefers_mel_but_pair_mass_unrecoverable,11,0.088
+HAM10000_test,wrong_prefers_mel_and_pair_recoverable,3,0.024
+BCN20000_external,wrong_pair_prefers_nv,1774,0.6209310465523277
+BCN20000_external,correct_mel,631,0.2208610430521526
+BCN20000_external,wrong_prefers_mel_but_pair_mass_unrecoverable,386,0.1351067553377669
+BCN20000_external,wrong_prefers_mel_and_pair_recoverable,66,0.023101155057752887

@@ -1,0 +1,59 @@
+project: HardPair-Net-Lite
+seed: 42
+device: cuda
+precision: fp32
+
+paths:
+  metadata_csv: ../dataset_metadata/HAM10000_metadata.csv
+  image_dirs:
+    - ../../../HAM10000_images_part_1
+    - ../../../HAM10000_images_part_2
+  output_dir: ../analysis_and_results/outputs
+  full_run_dir: full_20epochs
+
+dataset:
+  name: HAM10000
+  grouping_column: lesion_id
+  image_size: 192
+  num_workers: 2
+  train_fold_count: 7
+  fusion_fold: 0
+  validation_fold: 1
+  test_fold: 2
+
+model:
+  backbone: mobilenet_v3_small
+  weights: IMAGENET1K_V1
+  feature_dim: 576
+  unfreeze_last_modules: 3
+
+training:
+  batch_size: 8
+  head_batch_size: 256
+  max_head_epochs: 50
+  head_patience: 8
+  max_finetune_epochs: 20
+  min_finetune_epochs: 20
+  finetune_patience: 2
+  backbone_lr: 0.00002
+  head_lr: 0.0005
+  frozen_head_lr: 0.001
+  weight_decay: 0.0001
+  auxiliary_loss_weight: 0.3
+  gradient_clip_norm: 1.0
+  mixed_precision: false
+  checkpoint_interval_seconds: 3600
+
+fusion:
+  max_alpha: 0.75
+  fixed_alpha: 0.50
+  gate_lr: 0.01
+  gate_max_steps: 300
+  gate_validation_interval: 25
+  gate_patience_checks: 4
+  gate_weight_decay: 0.001
+  offpair_penalty: 0.10
+
+evaluation:
+  bootstrap_resamples: 2000
+

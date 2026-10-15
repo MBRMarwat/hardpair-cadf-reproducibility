@@ -1,0 +1,3 @@
+cohort,feature_source,folds,mean_roc_auc,sd_roc_auc,mean_balanced_accuracy,sd_balanced_accuracy,images_per_dataset,note
+diagnosis_matched_one_image_per_lesion,identical_192_preprocessed_imagenet_features,5,1.0,0.0,0.9993333333333332,0.0014907119849998881,747,"Diagnosis-matched, one image per lesion, lesion-grouped five-fold CV."
+diagnosis_matched_one_image_per_lesion,photometric_thumbnail_statistics,5,0.8874164226836629,0.031809480896343945,0.7957897091722594,0.031480585780023274,747,"Diagnosis-matched, one image per lesion, lesion-grouped five-fold CV."

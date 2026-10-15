@@ -1,0 +1,15 @@
+dataset,true_class,predicted_class,images,rate
+HAM10000_test,mel,akiec,0,0.0
+HAM10000_test,mel,bcc,1,0.008
+HAM10000_test,mel,bkl,19,0.152
+HAM10000_test,mel,df,0,0.0
+HAM10000_test,mel,mel,51,0.408
+HAM10000_test,mel,nv,54,0.432
+HAM10000_test,mel,vasc,0,0.0
+BCN20000_external,mel,akiec,3,0.0010500525026251313
+BCN20000_external,mel,bcc,87,0.030451522576128806
+BCN20000_external,mel,bkl,882,0.3087154357717886
+BCN20000_external,mel,df,14,0.004900245012250612
+BCN20000_external,mel,mel,631,0.2208610430521526
+BCN20000_external,mel,nv,1240,0.4340217010850543
+BCN20000_external,mel,vasc,0,0.0

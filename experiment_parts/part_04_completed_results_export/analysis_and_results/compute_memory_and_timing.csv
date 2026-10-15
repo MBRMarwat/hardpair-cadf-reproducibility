@@ -1,0 +1,9 @@
+measurement,stage,value,unit,status,notes
+training_step_time,saved_100_step_profile,0.02011858900252264,seconds_per_step,measured,"Measured profile; excludes data loading, validation, checkpoints, and notebook overhead."
+peak_allocated_gpu_memory,saved_100_step_profile,0.09145736694335938,GiB,measured,"Peak allocated CUDA memory during the saved benchmark, not full-run peak VRAM."
+full_run_peak_gpu_memory,full_20_epoch_training,unavailable,GiB,unavailable,Not logged and cannot be reconstructed.
+training_wall_clock,baseline_20_epochs,1821,seconds,artifact_timestamp_estimate,Approximate 30:21 interval; no structured start/end timer was saved.
+training_wall_clock,multitask_20_epochs,1769,seconds,artifact_timestamp_estimate,Approximate 29:29 interval; no structured start/end timer was saved.
+prediction_cache_wall_clock,all_cached_fusion_validation_test_predictions,262,seconds,artifact_timestamp_estimate,Approximate 4:22 interval; not isolated held-out test inference latency.
+held_out_test_inference_time,held_out_test_only,unavailable,seconds,unavailable,The original pipeline did not save a test-only inference timer.
+checkpoint_verification_inference_time,6060_saved_image_model_cases,110.94327920000069,seconds,measured_diagnostic_verification,"Later checkpoint/cache verification, not the original evaluation runtime."

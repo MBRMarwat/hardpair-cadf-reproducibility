@@ -1,0 +1,64 @@
+{
+  "generated": "2026-10-15",
+  "claims": [
+    {
+      "claim": "Stage 3 minus Stage 2 correction rate on the fixed 87-image set is -8.05 percentage points with lesion-clustered 95% CI [-20.00, 4.40].",
+      "sources": [
+        "paired_correction_bootstrap.csv",
+        "paired_correction_bootstrap.json",
+        "../../part_07_cadf_net_v3/V3_Audit/results/stage2_stage3_paired_validation.csv"
+      ]
+    },
+    {
+      "claim": "Stage 3 minus Stage 2 correction rate on the shared 73-image set is -12.33 percentage points with lesion-clustered 95% CI [-25.71, 1.33].",
+      "sources": [
+        "paired_correction_bootstrap.csv",
+        "paired_correction_bootstrap.json"
+      ]
+    },
+    {
+      "claim": "CADF-Net v3 full test pair-balanced accuracy is 61.11%, MEL sensitivity 36.00%, and macro-F1 0.5768.",
+      "sources": [
+        "../../part_07_cadf_net_v3/analysis_and_results/full/evaluation_metrics.json",
+        "../../part_07_cadf_net_v3/V3_Audit/results/official_test_metric_reproduction.csv"
+      ]
+    },
+    {
+      "claim": "The original HardPair generalist test values are pair-balanced accuracy 65.44%, MEL sensitivity 40.80%, and macro-F1 0.6186.",
+      "sources": [
+        "../../part_04_completed_results_export/analysis_and_results/held_out_test_predictions.csv",
+        "../../part_04_completed_results_export/analysis_and_results/per_class_metrics.csv"
+      ]
+    },
+    {
+      "claim": "EfficientNet-B0 test values are pair-balanced accuracy 64.95%, MEL sensitivity 37.60%, and macro-F1 0.6440.",
+      "sources": [
+        "comparator_full/evaluation_metrics.json",
+        "comparator_full/test_predictions.csv",
+        "comparator_full/test_outputs.pt"
+      ]
+    },
+    {
+      "claim": "EfficientNet-B0 minus original HardPair generalist pair-balanced accuracy is -0.61 percentage points with 95% CI [-6.57, 5.10].",
+      "sources": [
+        "comparator_full/evaluation_metrics.json",
+        "../../part_04_completed_results_export/analysis_and_results/held_out_test_predictions.csv"
+      ]
+    },
+    {
+      "claim": "CADF Stage 1/2 cached-feature validation ran with dropout active.",
+      "sources": [
+        "implementation_verification.json",
+        "../../part_07_cadf_net_v3/code/cadfnet_v3/training.py",
+        "../../part_07_cadf_net_v3/V3_Audit/results/implementation_observations.json"
+      ]
+    },
+    {
+      "claim": "HAM10000 splitting is lesion-disjoint but patient-disjointness is unverified.",
+      "sources": [
+        "implementation_verification.json",
+        "../../part_01_ham10000_core_experiment/analysis_and_results/outputs/ham10000_splits.csv"
+      ]
+    }
+  ]
+}

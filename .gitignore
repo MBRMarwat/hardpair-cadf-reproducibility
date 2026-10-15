@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# Raw datasets are obtained from their original repositories and are not redistributed.
+HAM10000_images_part_1/
+HAM10000_images_part_2/
+bcn_20k_train/
+
+# Interrupted-run state is local; selected reproducibility checkpoints are explicitly tracked.
+*_latest.pt
+*.tmp
+

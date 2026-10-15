@@ -1,0 +1,128 @@
+{
+  "audit_scope": "Saved configuration, code, split manifest, and selected checkpoints; no training or new model evaluation.",
+  "config_sha256": "44352e1f92440a47e45db53963e4b901d8381523fb9d12acabf9150e22988cf4",
+  "final_checkpoint_sha256": "09b203c8593a6fe0fc72ddede20ad2770b079ce3e357aa2f9a22a4c5726b9e65",
+  "stage3_checkpoint_sha256": "a764a118b71be78c144cbbc213469ff9cd91d85400f74585e243cb0fecd6b1ef",
+  "checks": [
+    {
+      "item": "encoder_input_channels",
+      "status": "matches",
+      "evidence": "Final checkpoint first convolution shape is (16, 5, 3, 3); input channels=5."
+    },
+    {
+      "item": "generalist_view",
+      "status": "matches_with_documented_resolution",
+      "evidence": "Generalist input is normalized RGB concatenated with two zero channels.",
+      "verified": true
+    },
+    {
+      "item": "specialist_view",
+      "status": "matches_with_limitation",
+      "evidence": "Specialist input is cropped normalized RGB plus two decomposition channels; cropper is a deterministic label-free heuristic, not a trained segmenter.",
+      "verified": true
+    },
+    {
+      "item": "head_dimensions",
+      "status": "matches",
+      "evidence": {
+        "generalist_first": [
+          256,
+          576
+        ],
+        "generalist_output": [
+          7,
+          256
+        ],
+        "specialist_first": [
+          128,
+          576
+        ],
+        "specialist_output": [
+          2,
+          128
+        ]
+      }
+    },
+    {
+      "item": "label_mapping",
+      "status": "matches",
+      "evidence": {
+        "mel_index": 4,
+        "nv_index": 5,
+        "class_names": [
+          "akiec",
+          "bcc",
+          "bkl",
+          "df",
+          "mel",
+          "nv",
+          "vasc"
+        ]
+      }
+    },
+    {
+      "item": "error_focused_loss",
+      "status": "matches",
+      "evidence": "Class-weighted focal term is multiplied by generalist-error and uncertainty weights.",
+      "verified": true
+    },
+    {
+      "item": "learned_alpha_cap",
+      "status": "matches",
+      "evidence": {
+        "configured_initial_cap": 0.75,
+        "learned_final_cap": 0.7479061484336853
+      }
+    },
+    {
+      "item": "transfer_formula",
+      "status": "matches",
+      "evidence": "Transfer is bounded by min(top off-pair margin, kappa*top probability), gated by feasibility, alpha and melanoma preference, subtracted from the strongest off-pair class and added to MEL, then renormalized.",
+      "verified": true
+    },
+    {
+      "item": "hourly_resume_checkpoint",
+      "status": "matches",
+      "evidence": {
+        "checkpoint_interval_seconds": 3600
+      }
+    },
+    {
+      "item": "stage3_final_checkpoint_identity",
+      "status": "matches",
+      "evidence": "The final bundle model_state is bytewise tensor-equal to stage3_finetune_best model_state.",
+      "verified": true
+    },
+    {
+      "item": "lesion_disjoint_split",
+      "status": "matches",
+      "evidence": {
+        "images": 10015,
+        "lesions": 7470,
+        "lesions_in_multiple_splits": 0
+      }
+    },
+    {
+      "item": "stage1_stage2_validation_mode",
+      "status": "implementation_defect_documented",
+      "evidence": "_head_validation uses no_grad but does not call eval(); Stage 1/2 heads remain in train mode, so dropout was active during recorded validation and checkpoint selection. Deterministic post-hoc Stage 2 results must replace the logged rate in reporting.",
+      "verified": true
+    },
+    {
+      "item": "full_ablation_completion",
+      "status": "partial",
+      "evidence": "A0/A1/A3/A4 have full-run outputs. A2 and A5 exist only as smoke ablations and must not be presented as full ablation results."
+    },
+    {
+      "item": "patient_disjoint_split",
+      "status": "unavailable",
+      "evidence": "The supplied HAM10000 manifest contains lesion IDs but no patient identifier; patient-level disjointness cannot be verified."
+    }
+  ],
+  "blocking_reporting_rules": [
+    "Describe the specialist crop as deterministic heuristic localization, not a learned segmentation model.",
+    "Use deterministic post-hoc checkpoint metrics for Stage 2; label original dropout-active validation values as defective logs.",
+    "Do not claim full A2 or A5 ablations.",
+    "Do not claim patient-disjoint splitting."
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "file_count_excluding_manifest": 24,
+  "files": [
+    {
+      "path": "analysis_methodology.md",
+      "sha256": "28826cccd7833dcf88bdf54103b444064720d24790adc8a5c07f0bf3097cd9a5",
+      "bytes": 2474
+    },
+    {
+      "path": "analysis_source_checksums.json",
+      "sha256": "520c4bcedce26f3c57da6d81fe7c36c5d2b03c73b0b8421a900ced81afa8a146",
+      "bytes": 1339
+    },
+    {
+      "path": "bcn_external_melanoma_predictions_diagnostic.csv",
+      "sha256": "60fd0206d3fcc46d92b75027ac9dea2519b234921fcf7430da6760496ba21d3a",
+      "bytes": 2832539
+    },
+    {
+      "path": "cohort_class_distribution.csv",
+      "sha256": "d93066d39520ff54cdf88b7de0902610c3a1cd4ef5ea8761997c23cae8e6a63f",
+      "bytes": 928
+    },
+    {
+      "path": "domain_classifier_folds.csv",
+      "sha256": "139c6c4b715d12e50e2863ee1e7509237a5bcb17adc22a61474b4e455a00f4f7",
+      "bytes": 4066
+    },
+    {
+      "path": "domain_classifier_oof_predictions.csv",
+      "sha256": "03a41315e6ded90fd2f754ba16cc001c69650e176e911adc3e86fc98e2c4aa0b",
+      "bytes": 947574
+    },
+    {
+      "path": "domain_classifier_roc.png",
+      "sha256": "0f44bb124763e4bd0c9de30a75d3bc72653a29615e76cfe616dc65a0c11564e1",
+      "bytes": 142960
+    },
+    {
+      "path": "domain_classifier_summary.csv",
+      "sha256": "8d8b184c7893bdcd665f4a657b43f9175aa2446cc4374c8ceea2aefcca7a548f",
+      "bytes": 2074
+    },
+    {
+      "path": "generalization_failure_report.md",
+      "sha256": "3faa33a4866917e5bdd9e55a69df9d02c7bda5f1d65c505e251bb25e493d3cf0",
+      "bytes": 4784
+    },
+    {
+      "path": "ham_test_melanoma_predictions_diagnostic.csv",
+      "sha256": "3ce1f933c61b88317854abbd003335fe56834e6252c3b6eb2be6e17cc01c69b6",
+      "bytes": 59473
+    },
+    {
+      "path": "image_characteristic_comparison.csv",
+      "sha256": "efb006585972b383df13b82a8274fb56be5f3f2b93e10bd29f144e9feab7fd01",
+      "bytes": 3469
+    },
+    {
+      "path": "lesion_level_melanoma_sensitivity.csv",
+      "sha256": "59b1383c005a25c2ad70eee4d719790cdb3d6ebc59d7c0151ac0e1659231a797",
+      "bytes": 350
+    },
+    {
+      "path": "melanoma_decision_failure_decomposition.csv",
+      "sha256": "b4d30fc1ca001ce1901304b67b887f76f9bce12582cddbcc41e85ea146c9a0e1",
+      "bytes": 541
+    },
+    {
+      "path": "melanoma_destination_shift_bootstrap.csv",
+      "sha256": "145a124fbc366085e624eea9555b52312f60e667c8fe58521cc38da27e976b6a",
+      "bytes": 894
+    },
+    {
+      "path": "melanoma_error_destinations.csv",
+      "sha256": "93bbaefdcac3cd75620503512117e506718a68dce4133f815214c10219c3df74",
+      "bytes": 601
+    },
+    {
+      "path": "melanoma_error_destinations.png",
+      "sha256": "0e62c379302d3edaeee5d11156b7413c694b095f6323fa31194ed5a7baf7603f",
+      "bytes": 48738
+    },
+    {
+      "path": "melanoma_image_characteristic_shift.png",
+      "sha256": "4d673578830e4d35c75c4d53bc654ddfea83bd4c406e4f97ecc886d5544bd52c",
+      "bytes": 48343
+    },
+    {
+      "path": "melanoma_image_characteristics_by_correctness.csv",
+      "sha256": "6f0804d715cd65aa0676588263bec3da27c2c5e7fb6d1d6a5bf40c4a646b5385",
+      "bytes": 2583
+    },
+    {
+      "path": "melanoma_probability_diagnostics.csv",
+      "sha256": "066e24eec9abc88c80687f8a9092b5cd841a6ff26a35f97ec36a22942fcc71af",
+      "bytes": 754
+    },
+    {
+      "path": "melanoma_probability_shift.png",
+      "sha256": "029419b2eb97691a038c4e80bd29584b1d9d3bc21fd89ff56c527718c2547657",
+      "bytes": 46248
+    },
+    {
+      "path": "melanoma_sensitivity_by_metadata.csv",
+      "sha256": "d0b656783848ac087dbd9d07219b6baf79c835ed19d96e971fc9e4a30c2dc427",
+      "bytes": 2580
+    },
+    {
+      "path": "metadata_distributions.csv",
+      "sha256": "63ba1cb6dc1aa7828d4434011f438ab7031633d62fb618e74c8d4a1bc093eb9d",
+      "bytes": 3718
+    },
+    {
+      "path": "metadata_standardization_sensitivity.csv",
+      "sha256": "9e307ff3afa5af0d464c0c7c7074b3e4d3d8be3ea4664082089255bb75be8a79",
+      "bytes": 727
+    },
+    {
+      "path": "per_image_acquisition_statistics.csv",
+      "sha256": "1718974b66a53ce4830888edb643dec3a74bb0cc1ef66f9be64703aa6b00a8d4",
+      "bytes": 2363489
+    }
+  ]
+}

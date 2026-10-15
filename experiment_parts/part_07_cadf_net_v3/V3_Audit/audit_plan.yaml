@@ -1,0 +1,29 @@
+audit_name: CADF-Net-v3 post-hoc checkpoint and gate audit
+status: locked_before_running
+scope:
+  - Re-evaluate saved Stage 2 and Stage 3 best and last-epoch checkpoints.
+  - Compare specialist correction opportunities using identical validation images and definitions.
+  - Quantify prediction changes caused by the learned alpha gate and feasibility beta transfer.
+  - Describe the validation-to-test performance gap with lesion-level uncertainty.
+prohibited:
+  - Retraining any model.
+  - Updating model weights.
+  - Selecting thresholds, hyperparameters, or checkpoints using held-out test labels.
+  - Replacing or modifying original CADF-Net v3 outputs.
+definitions:
+  pair_conditional_error: Generalist MEL-vs-NV conditional argmax is wrong on a true MEL/NV image.
+  pair_conditional_correction: Specialist MEL-vs-NV argmax is correct on a pair-conditional error.
+  full_error: Generalist seven-class argmax is wrong on a true MEL/NV image.
+  full_error_correction_potential: Specialist pair argmax is correct on a full error.
+  beneficial_prediction_change: Source prediction is wrong and destination prediction is correct.
+  harmful_prediction_change: Source prediction is correct and destination prediction is wrong.
+  wrong_to_wrong_change: Source and destination predictions differ and both are wrong.
+  alpha_effect: Generalist probabilities compared with primary pair fusion using learned alpha and beta=0.
+  beta_effect: Primary pair fusion compared with full fusion using the same learned alpha and learned beta.
+  primary_metric: Pair-balanced accuracy, the mean of MEL and NV seven-class recalls.
+uncertainty:
+  unit: lesion
+  resamples: 2000
+  confidence_interval: percentile_95
+  seed: 42
+

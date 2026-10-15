@@ -1,0 +1,11 @@
+cohort,feature_source,folds,mean_roc_auc,sd_roc_auc,mean_balanced_accuracy,sd_balanced_accuracy,interpretation
+diagnosis_matched_all_classes,basic_acquisition_statistics,5,1.0,0.0,1.0,0.0,Dataset separability only; AUCs are not additive and do not provide causal attribution.
+diagnosis_matched_all_classes,frozen_baseline_probability_vector,5,0.7254639282904489,0.036239079099411174,0.6519967524531607,0.03136012612744848,Dataset separability only; AUCs are not additive and do not provide causal attribution.
+diagnosis_matched_all_classes,geometry_resolution_statistics,5,1.0,0.0,1.0,0.0,Dataset separability only; AUCs are not additive and do not provide causal attribution.
+diagnosis_matched_all_classes,imagenet_pretrained_576d_features,5,1.0,0.0,0.9995145631067961,0.0010854698919901826,Dataset separability only; AUCs are not additive and do not provide causal attribution.
+diagnosis_matched_all_classes,photometric_thumbnail_statistics,5,0.8313950005451748,0.016975358186787342,0.7535157774336767,0.017179518048423024,Dataset separability only; AUCs are not additive and do not provide causal attribution.
+melanoma_only,basic_acquisition_statistics,5,1.0,0.0,1.0,0.0,Dataset separability only; AUCs are not additive and do not provide causal attribution.
+melanoma_only,frozen_baseline_probability_vector,5,0.6781698952898954,0.09001093017236678,0.6210770895770896,0.10395837727224765,Dataset separability only; AUCs are not additive and do not provide causal attribution.
+melanoma_only,geometry_resolution_statistics,5,1.0,0.0,1.0,0.0,Dataset separability only; AUCs are not additive and do not provide causal attribution.
+melanoma_only,imagenet_pretrained_576d_features,5,0.9997252747252748,0.0006143043894230169,0.991153846153846,0.012283630325131785,Dataset separability only; AUCs are not additive and do not provide causal attribution.
+melanoma_only,photometric_thumbnail_statistics,5,0.8197734909534911,0.03994142076682729,0.7780642690642691,0.07724142521199505,Dataset separability only; AUCs are not additive and do not provide causal attribution.

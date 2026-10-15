@@ -1,0 +1,3 @@
+candidate,reference,label_changes,wrong_to_correct,correct_to_wrong,mel_to_nv,nv_to_mel,changes_on_true_mel,changes_on_true_nv,changes_on_true_offpair
+fixed_fusion,auxiliary_only,3,1,1,2,0,1,1,1
+learned_fusion,auxiliary_only,1,0,0,0,0,0,0,1

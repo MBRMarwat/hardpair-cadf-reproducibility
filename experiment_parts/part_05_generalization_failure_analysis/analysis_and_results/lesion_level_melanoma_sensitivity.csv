@@ -1,0 +1,3 @@
+dataset,aggregation,melanoma_lesions,correct_lesions,lesion_level_mel_sensitivity,wilson_95_low,wilson_95_high
+HAM10000_test,mean probability per melanoma lesion,66,29,0.4393939393939394,0.3262812091954944,0.5591736462000862
+BCN20000_external,mean probability per melanoma lesion,524,99,0.18893129770992367,0.15772384118939192,0.22466646833962706

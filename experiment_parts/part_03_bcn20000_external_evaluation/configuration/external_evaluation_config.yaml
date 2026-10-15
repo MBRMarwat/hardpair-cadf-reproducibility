@@ -1,0 +1,103 @@
+protocol:
+  name: BCN20000 independent external confirmation
+  version: 1
+  locked_before_external_inference: true
+  seed: 42
+  description: >-
+    Frozen external evaluation of HAM10000-trained models. No model weight,
+    calibration temperature, fusion coefficient, gate, threshold, or method
+    is selected or fitted using BCN20000 outcomes.
+
+data:
+  metadata_csv: ../bcn_20k_train.csv
+  image_dir: ../bcn_20k_train
+  filename_column: bcn_filename
+  diagnosis_column: diagnosis
+  lesion_column: lesion_id
+  image_size: 192
+  expected_rows: 12413
+  metadata_sha256: 0F219633F49C07B0A1C844C4FAA0FA1FC26690743F2C44DC7337A7A4135BC40B
+  label_map:
+    AK: akiec
+    BCC: bcc
+    BKL: bkl
+    DF: df
+    MEL: mel
+    NV: nv
+    VASC: vasc
+  excluded_primary_labels:
+    - SCC
+  exclusion_rule: >-
+    Exclude SCC and unknown diagnoses from the primary seven-class analysis.
+    Exclude byte-identical HAM10000 overlaps if any are found. Report SCC
+    forced-prediction behavior separately. Report a sensitivity analysis after
+    excluding perceptual-hash candidates with Hamming distance <= 4.
+
+frozen_artifacts:
+  baseline_checkpoint:
+    path: ../outputs/full_20epochs/baseline_best.pt
+    sha256: EEBA8F22E378FC3DAC81C2B98460232252CB54D237B0B838DA1DB522D4DB30E4
+  multitask_checkpoint:
+    path: ../outputs/full_20epochs/multitask_best.pt
+    sha256: 9FA693A68745D1CF8A4A8D91650165745C22DE1ECC789C23AA74A9253D9B04D5
+  original_gate:
+    path: ../outputs/full_20epochs/learned_gate.pt
+    sha256: 58F743DDB3B801A1D601289D0B8D0300E9CAB7608AE2E7F6D0AB9E65E885B524
+  balanced_logistic_specialist:
+    path: ../hardpair_diagnostics/balanced_logistic_specialist.joblib
+    sha256: C4498125B1700CC8E388F205139E58B0CEEC0EAB719D371FF89ABC15F0B120EC
+  balanced_logistic_gate:
+    path: ../hardpair_diagnostics/balanced_logistic_gate.pt
+    sha256: 82657E8849EF8BD87E1AB13A31744E710B23B49A856D0CA20DC6FE1246DC3C9D
+  audit_facts: ../hardpair_diagnostics/audit_facts.json
+
+temperatures:
+  baseline_generalist: 1.5191582441329956
+  multitask_generalist: 1.5054194927215576
+  original_specialist: 1.7353450059890747
+  balanced_logistic_specialist: 2.2931456565856934
+
+methods:
+  fixed_alpha: 0.5
+  primary_candidate: balanced_logistic_fixed_fusion
+  secondary_candidate: balanced_logistic_learned_gate
+  comparators:
+    - baseline
+    - auxiliary_only
+    - original_fixed_fusion
+    - original_learned_fusion
+
+inference:
+  device: cuda
+  batch_size: 16
+  num_workers: 2
+  chunk_size: 256
+  checkpoint_interval_seconds: 3600
+  deterministic: true
+
+statistics:
+  bootstrap_unit: lesion_id
+  bootstrap_resamples: 2000
+  confidence_level: 0.95
+  primary_metrics:
+    - pair_balanced_accuracy
+    - mel_sensitivity
+    - nv_sensitivity
+    - macro_f1
+  predeclared_comparisons:
+    - candidate: balanced_logistic_fixed_fusion
+      reference: baseline
+      role: primary
+    - candidate: balanced_logistic_fixed_fusion
+      reference: auxiliary_only
+      role: primary_mechanism
+    - candidate: balanced_logistic_learned_gate
+      reference: auxiliary_only
+      role: secondary
+    - candidate: original_fixed_fusion
+      reference: auxiliary_only
+      role: context
+    - candidate: original_learned_fusion
+      reference: auxiliary_only
+      role: context
+

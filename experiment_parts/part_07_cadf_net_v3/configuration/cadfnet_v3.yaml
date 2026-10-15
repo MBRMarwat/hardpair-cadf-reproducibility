@@ -1,0 +1,81 @@
+project: CADF-Net-v3
+seed: 42
+device: cuda
+
+paths:
+  split_manifest: ../part_01_ham10000_core_experiment/analysis_and_results/outputs/ham10000_splits.csv
+  ham_metadata: ../part_01_ham10000_core_experiment/dataset_metadata/HAM10000_metadata.csv
+  ham_image_dirs:
+    - ../../HAM10000_images_part_1
+    - ../../HAM10000_images_part_2
+  bcn_metadata: ../part_03_bcn20000_external_evaluation/dataset_metadata/bcn_20k_train.csv
+  bcn_image_dir: ../../bcn_20k_train
+  output_dir: analysis_and_results/full
+
+data:
+  image_size: 192
+  num_workers: 0
+  feature_batch_size: 32
+  image_batch_size: 8
+  evaluation_batch_size: 16
+  pin_memory: true
+  class_names: [akiec, bcc, bkl, df, mel, nv, vasc]
+  mel_index: 4
+  nv_index: 5
+  off_pair_indices: [0, 1, 2, 3, 6]
+
+model:
+  pretrained: true
+  feature_dim: 576
+  generalist_hidden: 256
+  specialist_hidden: 128
+  gate_hidden: 64
+  dropout: 0.10
+  unfreeze_last_blocks: 3
+
+training:
+  stage1_epochs: 15
+  stage2_epochs: 15
+  stage3_epochs: 10
+  stage4_epochs: 50
+  stage5_epochs: 30
+  stage1_lr: 0.001
+  stage2_lr: 0.001
+  stage3_encoder_lr: 0.00002
+  stage3_head_lr: 0.0002
+  stage4_lr: 0.001
+  stage5_lr: 0.0005
+  weight_decay: 0.0001
+  gradient_clip_norm: 1.0
+  specialist_loss_weight: 0.30
+  offpair_safety_weight: 0.10
+  effective_number_beta: 0.999
+  checkpoint_interval_seconds: 3600
+
+specialist_loss:
+  alpha_mel: 0.70
+  alpha_nv: 0.30
+  gamma: 2.0
+  error_weight: 3.0
+  uncertainty_weight: 2.0
+
+fusion:
+  alpha_initial_cap: 0.75
+  kappa: 0.30
+  temperature: 0.10
+  fixed_alpha: 0.50
+  fixed_beta: 0.50
+
+evaluation:
+  bootstrap_resamples: 2000
+  confidence_level: 0.95
+
+ablations:
+  enabled: [A0, A1, A2, A3, A4, A5]
+  descriptions:
+    A0: Full CADF-Net v3
+    A1: Generalist only
+    A2: Standard specialist cross-entropy instead of error-focused loss
+    A3: No feasibility transfer (beta equals zero)
+    A4: Fixed alpha and beta instead of the learned gate
+    A5: Same zero-augmented RGB view for both heads

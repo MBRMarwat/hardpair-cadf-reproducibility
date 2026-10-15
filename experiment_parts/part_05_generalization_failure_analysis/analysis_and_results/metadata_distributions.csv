@@ -1,0 +1,56 @@
+dataset,subset,variable,category,images,lesions,image_fraction
+HAM10000_test,all_primary,age_bin,40-59,473,373,0.46831683168316834
+HAM10000_test,all_primary,age_bin,60-79,281,192,0.27821782178217824
+HAM10000_test,all_primary,age_bin,80+,72,50,0.07128712871287128
+HAM10000_test,all_primary,age_bin,<40,181,129,0.1792079207920792
+HAM10000_test,all_primary,age_bin,unknown,3,3,0.0029702970297029703
+HAM10000_test,all_primary,sex,female,451,339,0.44653465346534654
+HAM10000_test,all_primary,sex,male,554,405,0.5485148514851486
+HAM10000_test,all_primary,sex,unknown,5,3,0.0049504950495049506
+HAM10000_test,all_primary,site,acral,1,1,0.0009900990099009901
+HAM10000_test,all_primary,site,head/neck,108,64,0.10693069306930693
+HAM10000_test,all_primary,site,lower extremity,226,173,0.22376237623762377
+HAM10000_test,all_primary,site,oral/genital,3,3,0.0029702970297029703
+HAM10000_test,all_primary,site,torso,540,415,0.5346534653465347
+HAM10000_test,all_primary,site,unknown,14,13,0.013861386138613862
+HAM10000_test,all_primary,site,upper extremity,118,78,0.11683168316831684
+HAM10000_test,melanoma,age_bin,40-59,51,24,0.408
+HAM10000_test,melanoma,age_bin,60-79,59,32,0.472
+HAM10000_test,melanoma,age_bin,80+,8,6,0.064
+HAM10000_test,melanoma,age_bin,<40,7,4,0.056
+HAM10000_test,melanoma,sex,female,52,31,0.416
+HAM10000_test,melanoma,sex,male,73,35,0.584
+HAM10000_test,melanoma,site,head/neck,12,8,0.096
+HAM10000_test,melanoma,site,lower extremity,27,17,0.216
+HAM10000_test,melanoma,site,torso,58,30,0.464
+HAM10000_test,melanoma,site,upper extremity,28,11,0.224
+BCN20000_external,all_primary,age_bin,40-59,4138,1150,0.3453513603738942
+BCN20000_external,all_primary,age_bin,60-79,4090,1180,0.3413453513603739
+BCN20000_external,all_primary,age_bin,80+,1716,484,0.14321482223335003
+BCN20000_external,all_primary,age_bin,<40,1964,618,0.16391253546987147
+BCN20000_external,all_primary,age_bin,unknown,74,27,0.006175930562510432
+BCN20000_external,all_primary,sex,female,5704,1647,0.4760474044399933
+BCN20000_external,all_primary,sex,male,6204,1780,0.5177766649974962
+BCN20000_external,all_primary,sex,unknown,74,27,0.006175930562510432
+BCN20000_external,all_primary,site,acral,367,73,0.030629277249207144
+BCN20000_external,all_primary,site,head/neck,3091,907,0.25797028876648304
+BCN20000_external,all_primary,site,lower extremity,2047,551,0.17083959272241697
+BCN20000_external,all_primary,site,oral/genital,59,17,0.004924052745785345
+BCN20000_external,all_primary,site,torso,4989,1485,0.41637456184276417
+BCN20000_external,all_primary,site,unknown,167,62,0.013937573026205975
+BCN20000_external,all_primary,site,upper extremity,1262,359,0.10532465364713738
+BCN20000_external,melanoma,age_bin,40-59,1010,182,0.3535176758837942
+BCN20000_external,melanoma,age_bin,60-79,1107,200,0.38746937346867344
+BCN20000_external,melanoma,age_bin,80+,508,91,0.17780889044452222
+BCN20000_external,melanoma,age_bin,<40,219,50,0.07665383269163459
+BCN20000_external,melanoma,age_bin,unknown,13,3,0.004550227511375569
+BCN20000_external,melanoma,sex,female,1379,249,0.4826741337066853
+BCN20000_external,melanoma,sex,male,1465,272,0.5127756387819391
+BCN20000_external,melanoma,sex,unknown,13,3,0.004550227511375569
+BCN20000_external,melanoma,site,acral,195,27,0.06825341267063353
+BCN20000_external,melanoma,site,head/neck,635,120,0.22226111305565277
+BCN20000_external,melanoma,site,lower extremity,489,83,0.1711585579278964
+BCN20000_external,melanoma,site,oral/genital,19,5,0.006650332516625832
+BCN20000_external,melanoma,site,torso,1127,214,0.3944697234861743
+BCN20000_external,melanoma,site,unknown,12,3,0.004200210010500525
+BCN20000_external,melanoma,site,upper extremity,380,72,0.13300665033251663

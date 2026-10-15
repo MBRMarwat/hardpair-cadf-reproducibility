@@ -1,0 +1,4 @@
+factor,ham_raw_mel_sensitivity,bcn_raw_mel_sensitivity,bcn_sensitivity_reweighted_to_ham_mel_distribution,composition_shift_effect_raw_minus_reweighted,residual_bcn_minus_ham_after_reweighting,ham_weight_coverage,interpretation
+age_bin,0.408,0.2208610430521526,0.2202643761717387,0.0005966668804139041,-0.18773562382826128,1.0,Descriptive one-factor standardization; not a causal decomposition.
+sex,0.408,0.2208610430521526,0.2214357478214168,-0.0005747047692642171,-0.18656425217858316,1.0,Descriptive one-factor standardization; not a causal decomposition.
+site,0.408,0.2208610430521526,0.20524563917834976,0.015615403873802836,-0.20275436082165021,1.0,Descriptive one-factor standardization; not a causal decomposition.

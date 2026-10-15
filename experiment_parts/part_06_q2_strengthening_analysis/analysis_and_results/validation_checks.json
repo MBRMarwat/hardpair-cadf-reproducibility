@@ -1,0 +1,28 @@
+{
+  "all_checks_passed": true,
+  "conditional_adjustment_invariants": {
+    "HAM_validation": {
+      "max_offpair_probability_difference": 0.0,
+      "max_pair_mass_difference": 5.960464477539063e-08,
+      "max_probability_sum_error": 1.7881393432617188e-07
+    },
+    "HAM_test": {
+      "max_offpair_probability_difference": 0.0,
+      "max_pair_mass_difference": 5.960464477539063e-08,
+      "max_probability_sum_error": 2.384185791015625e-07
+    },
+    "BCN_external": {
+      "max_offpair_probability_difference": 0.0,
+      "max_pair_mass_difference": 5.960464477539063e-08,
+      "max_probability_sum_error": 2.980232238769531e-07
+    }
+  },
+  "oracle_categories_mutually_exclusive_and_exhaustive": true,
+  "matched_operating_bootstrap_rows": 44,
+  "bootstrap_resamples_per_row": 2000,
+  "new_rule_evaluation_status": {
+    "HAM_validation": "primary_development",
+    "HAM_test": "exploratory_previously_examined",
+    "BCN_external": "exploratory_previously_examined"
+  }
+}

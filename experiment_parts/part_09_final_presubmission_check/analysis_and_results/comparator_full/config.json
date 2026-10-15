@@ -1,0 +1,18 @@
+{
+  "experiment": "EfficientNet-B0 same-split comparator",
+  "seed": 42,
+  "image_size": 192,
+  "batch_size": 16,
+  "num_workers": 2,
+  "epochs": 20,
+  "backbone_lr": 2e-05,
+  "classifier_lr": 0.0005,
+  "weight_decay": 0.0001,
+  "gradient_clip_norm": 1.0,
+  "unfreeze_last_feature_modules": 3,
+  "checkpoint_interval_seconds": 3600,
+  "bootstrap_resamples": 2000,
+  "selection_key": "validation macro-F1, with melanoma sensitivity as tie-breaker",
+  "calibration_split": "fusion",
+  "test_use": "one evaluation after training, checkpoint selection, and calibration were frozen"
+}

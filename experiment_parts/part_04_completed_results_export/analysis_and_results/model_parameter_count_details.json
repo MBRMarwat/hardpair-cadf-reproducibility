@@ -1,0 +1,42 @@
+{
+  "baseline_checkpoint": {
+    "all_checkpoint_parameters": 933353,
+    "specialist_head_parameters": 1154,
+    "generalist_head_parameters": 4039,
+    "layer_norm_parameters": 1152
+  },
+  "multitask_checkpoint": {
+    "all_checkpoint_parameters": 933353,
+    "specialist_head_parameters": 1154,
+    "generalist_head_parameters": 4039,
+    "layer_norm_parameters": 1152
+  },
+  "learned_gate_parameters": 6,
+  "method_counts": [
+    {
+      "method": "baseline",
+      "parameter_count": 932199,
+      "count_scope": "backbone + normalization + seven-class head used for baseline inference",
+      "additional_over_auxiliary": 0
+    },
+    {
+      "method": "auxiliary_only",
+      "parameter_count": 933353,
+      "count_scope": "backbone + normalization + seven-class and two-class heads",
+      "additional_over_auxiliary": 0
+    },
+    {
+      "method": "fixed_fusion",
+      "parameter_count": 933353,
+      "count_scope": "multitask network; fixed fusion has no learned parameters",
+      "additional_over_auxiliary": 0
+    },
+    {
+      "method": "learned_fusion",
+      "parameter_count": 933359,
+      "count_scope": "multitask network + five-input logistic gate",
+      "additional_over_auxiliary": 6
+    }
+  ],
+  "method": "Counts were derived from saved checkpoint tensor shapes; no model was instantiated."
+}

@@ -1,0 +1,9 @@
+{
+  "runtime_seconds": 19.932876599996234,
+  "encoder_training_performed": false,
+  "disease_model_inference_performed": false,
+  "new_disease_model_fitted": false,
+  "scalar_parameters_fitted_on_fusion_partition": 2,
+  "diagnostic_domain_classifier_target": "dataset identity only",
+  "ham_test_and_bcn_new_rule_status": "exploratory_previously_examined"
+}

@@ -1,0 +1,5 @@
+model,partition,melanoma_support,unrecoverable_melanoma_count,unrecoverable_melanoma_rate
+baseline,held_out_test,125,16,0.128
+auxiliary_only,held_out_test,125,19,0.152
+fixed_fusion,held_out_test,125,19,0.152
+learned_fusion,held_out_test,125,19,0.152

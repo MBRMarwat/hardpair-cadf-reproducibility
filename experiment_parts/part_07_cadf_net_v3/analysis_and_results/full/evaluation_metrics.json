@@ -1,0 +1,318 @@
+{
+  "A1_generalist_only": {
+    "images": 1010,
+    "accuracy": 0.7435643564356436,
+    "balanced_accuracy": 0.6579588615930031,
+    "macro_f1": 0.5797740472129954,
+    "pair_balanced_accuracy": 0.6231111111111112,
+    "mel_sensitivity": 0.384,
+    "nv_sensitivity": 0.8622222222222222,
+    "confusion_matrix": [
+      [
+        26,
+        2,
+        2,
+        0,
+        2,
+        3,
+        0
+      ],
+      [
+        9,
+        30,
+        2,
+        2,
+        8,
+        3,
+        1
+      ],
+      [
+        17,
+        3,
+        42,
+        2,
+        13,
+        16,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        31,
+        0,
+        48,
+        41,
+        1
+      ],
+      [
+        6,
+        12,
+        44,
+        4,
+        24,
+        582,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        20
+      ]
+    ],
+    "unrecoverable_melanoma_count": 26,
+    "unrecoverable_melanoma_rate": 0.208
+  },
+  "A0_full": {
+    "images": 1010,
+    "accuracy": 0.7415841584158416,
+    "balanced_accuracy": 0.6560663884747235,
+    "macro_f1": 0.5767617895355776,
+    "pair_balanced_accuracy": 0.6111111111111112,
+    "mel_sensitivity": 0.36,
+    "nv_sensitivity": 0.8622222222222222,
+    "confusion_matrix": [
+      [
+        26,
+        2,
+        2,
+        0,
+        2,
+        3,
+        0
+      ],
+      [
+        10,
+        30,
+        2,
+        2,
+        7,
+        3,
+        1
+      ],
+      [
+        17,
+        3,
+        43,
+        2,
+        13,
+        15,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        33,
+        0,
+        45,
+        42,
+        1
+      ],
+      [
+        6,
+        12,
+        45,
+        4,
+        23,
+        582,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        20
+      ]
+    ],
+    "unrecoverable_melanoma_count": 26,
+    "unrecoverable_melanoma_rate": 0.208,
+    "offpair_to_pair_transitions": 0,
+    "offpair_to_pair_transition_rate": 0.0
+  },
+  "A3_no_feasibility_transfer": {
+    "images": 1010,
+    "accuracy": 0.7425742574257426,
+    "balanced_accuracy": 0.6576024867850154,
+    "macro_f1": 0.5781032270096936,
+    "pair_balanced_accuracy": 0.6111111111111112,
+    "mel_sensitivity": 0.36,
+    "nv_sensitivity": 0.8622222222222222,
+    "confusion_matrix": [
+      [
+        26,
+        2,
+        2,
+        0,
+        2,
+        3,
+        0
+      ],
+      [
+        10,
+        30,
+        2,
+        2,
+        7,
+        3,
+        1
+      ],
+      [
+        17,
+        3,
+        44,
+        2,
+        12,
+        15,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        33,
+        0,
+        45,
+        42,
+        1
+      ],
+      [
+        6,
+        12,
+        46,
+        4,
+        22,
+        582,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        20
+      ]
+    ],
+    "unrecoverable_melanoma_count": 26,
+    "unrecoverable_melanoma_rate": 0.208,
+    "offpair_to_pair_transitions": 0,
+    "offpair_to_pair_transition_rate": 0.0
+  },
+  "A4_fixed_gate": {
+    "images": 1010,
+    "accuracy": 0.7435643564356436,
+    "balanced_accuracy": 0.6635319060600569,
+    "macro_f1": 0.5805321146336023,
+    "pair_balanced_accuracy": 0.6031111111111112,
+    "mel_sensitivity": 0.344,
+    "nv_sensitivity": 0.8622222222222222,
+    "confusion_matrix": [
+      [
+        27,
+        2,
+        2,
+        0,
+        2,
+        2,
+        0
+      ],
+      [
+        10,
+        31,
+        2,
+        2,
+        6,
+        3,
+        1
+      ],
+      [
+        18,
+        3,
+        45,
+        2,
+        10,
+        15,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        36,
+        0,
+        43,
+        41,
+        1
+      ],
+      [
+        6,
+        12,
+        45,
+        4,
+        23,
+        582,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        20
+      ]
+    ],
+    "unrecoverable_melanoma_count": 26,
+    "unrecoverable_melanoma_rate": 0.208,
+    "offpair_to_pair_transitions": 0,
+    "offpair_to_pair_transition_rate": 0.0
+  },
+  "A0_vs_A1_lesion_bootstrap": {
+    "mean_difference": -0.012041704386472701,
+    "ci_95_low": -0.027781031653285028,
+    "ci_95_high": -0.0006818287074566842,
+    "resamples": 2000
+  }
+}

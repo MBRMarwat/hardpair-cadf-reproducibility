@@ -1,0 +1,68 @@
+{
+  "audit_constraints": {
+    "retrained": false,
+    "retuned": false,
+    "original_outputs_modified": false,
+    "test_use": "diagnosis_and_reporting_only"
+  },
+  "runtime": {
+    "python": "3.10.20",
+    "torch": "2.2.2+cu118",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce GTX 1050"
+  },
+  "stage_comparison": {
+    "stage2_selected_epoch": 4.0,
+    "stage3_selected_epoch": 2.0,
+    "stage2_last_stored_conditional_rate": 0.4193548262119293,
+    "stage3_last_stored_conditional_rate": 0.26966291666030884,
+    "stage2_last_reevaluated_conditional_rate": 0.3793103448275862,
+    "stage3_last_reevaluated_conditional_rate": 0.2696629213483146,
+    "stage2_last_cached_feature_conditional_rate": 0.3793103448275862,
+    "stage2_best_stored_conditional_rate": 0.49462366104125977,
+    "stage2_best_cached_feature_conditional_rate": 0.4942528735632184,
+    "stage2_validation_dropout_active": true,
+    "stage2_best_conditional_numerator": 43,
+    "stage2_best_conditional_denominator": 87,
+    "stage2_best_conditional_rate": 0.4942528735632184,
+    "stage3_best_conditional_numerator": 44,
+    "stage3_best_conditional_denominator": 99,
+    "stage3_best_conditional_rate": 0.4444444444444444,
+    "stage2_pair_specialist_accuracy": 0.7671232876712328,
+    "stage3_pair_specialist_accuracy": 0.8779576587795765,
+    "stage2_error_set_fixed_delta": -0.08045977011494253,
+    "intersection_fixed_delta": -0.1232876712328767,
+    "final_bundle_equals_stage3_best": true,
+    "final_bundle_stage3_best_max_abs_difference": 0.0
+  },
+  "test_gate_audit": {
+    "test_images": 1010,
+    "mean_alpha": 0.2076774388551712,
+    "mean_beta": 0.4445827305316925,
+    "mean_beta_transfer": 0.0004203233402222395,
+    "alpha_argmax_changes": 10,
+    "beta_argmax_changes": 2,
+    "full_argmax_changes": 8,
+    "alpha_beneficial": 3,
+    "alpha_harmful": 4,
+    "beta_beneficial": 0,
+    "beta_harmful": 1,
+    "beta_wrong_to_wrong": 1,
+    "transfer_over_0_001": 98,
+    "transfer_over_0_01": 2,
+    "max_analytical_vs_realized_transfer_error": 1.0336952982470393e-07
+  },
+  "validation_test_gap": {
+    "validation_pair_balanced_accuracy": 0.6600581467277,
+    "test_pair_balanced_accuracy": 0.6111111111111112,
+    "pair_balanced_accuracy_difference": -0.04894703561658886,
+    "validation_mel_sensitivity": 0.4661016949152542,
+    "test_mel_sensitivity": 0.36,
+    "validation_macro_f1": 0.5569996422338356,
+    "test_macro_f1": 0.5767617895355776,
+    "pair_gap_ci_low": -0.12679221073958769,
+    "pair_gap_ci_high": 0.034921216694327475,
+    "mel_gap_ci_low": -0.25873121036546387,
+    "mel_gap_ci_high": 0.05463844316757697
+  }
+}

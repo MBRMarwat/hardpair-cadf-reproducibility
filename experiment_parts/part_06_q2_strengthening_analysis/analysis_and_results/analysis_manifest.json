@@ -1,0 +1,129 @@
+{
+  "files": [
+    {
+      "path": "analysis_plan.yaml",
+      "bytes": 2117,
+      "sha256": "ce29ef8fda74239a45ec30542b1a7627d65921c6dff98240dfcbc4cef45323df"
+    },
+    {
+      "path": "clinical_tradeoff_counts.csv",
+      "bytes": 2487,
+      "sha256": "6c799621c3b9b4356635874032bab12808c7a7386320c1d58681a16532bd79a3"
+    },
+    {
+      "path": "cross_dataset_melanoma_error_crosstab.csv",
+      "bytes": 5652,
+      "sha256": "138842818d60a6c59f121a32f545aa2b4a102c119d08674704c4c6c969071c1a"
+    },
+    {
+      "path": "decision_curve_net_benefit.csv",
+      "bytes": 123452,
+      "sha256": "e5730835fbdc5e1373201b4a23a7f9809a1fa407a7368b058a27ade6e4dec56b"
+    },
+    {
+      "path": "decision_curves.png",
+      "bytes": 191196,
+      "sha256": "aa20ed8e090f438c7a3f4f80165e7947701e3df34c74a448d8b380b1f0c630b7"
+    },
+    {
+      "path": "domain_robustness_lesion_balanced_folds.csv",
+      "bytes": 1155,
+      "sha256": "bd118fe7e1d47c4a8f23ab908b2da791ee8353bcad32405646ab23b0f2f8ef4d"
+    },
+    {
+      "path": "domain_robustness_lesion_balanced_summary.csv",
+      "bytes": 564,
+      "sha256": "63f89e3b69ae0fa71031f833832872405eeadd1ae05f5ece9fb83b0a91ad5459"
+    },
+    {
+      "path": "fitted_scalar_adjustments.json",
+      "bytes": 189,
+      "sha256": "e4bf74af604534075fb8650f8d7549f61607cff239f39e7e8fd4ac419778c7f0"
+    },
+    {
+      "path": "independent_confirmation_status.md",
+      "bytes": 228,
+      "sha256": "561ddc090bd1a8d89a6484bd7d075c16811801d02c5a3373dbd0bf2919236854"
+    },
+    {
+      "path": "matched_operating_point_bootstrap_validation.csv",
+      "bytes": 7791,
+      "sha256": "9adb9d7f41169e5f22a9d6cb7f50baee8bbf6ee1435c54a015458d7e1a281e2a"
+    },
+    {
+      "path": "matched_operating_points.csv",
+      "bytes": 37625,
+      "sha256": "187d477bc91ed803d59653f703bbbfa57f81b38fa6b72ec297eb784afdefd804"
+    },
+    {
+      "path": "melanoma_error_decomposition_bcn_external.csv",
+      "bytes": 466650,
+      "sha256": "78ab31ac4e2b616d72cfdfff7ae5b9d5990e0fec7e07be9eb9919838dccf0098"
+    },
+    {
+      "path": "melanoma_error_decomposition_ham_test.csv",
+      "bytes": 19525,
+      "sha256": "109a04d7665516b063e8d586e53cae13eaaa55357d2346ddf9449715babe1f85"
+    },
+    {
+      "path": "operating_curves_bcn_external.png",
+      "bytes": 144172,
+      "sha256": "517c24066b2bd2ab7c7c195aded7c409713c9ada2fb7c1a191f1695724d29227"
+    },
+    {
+      "path": "operating_curves_ham_test.png",
+      "bytes": 130254,
+      "sha256": "5cf425cddc87d123232acb282ed70eb15fbcabe1a7737d0c2d732c71988a6ff2"
+    },
+    {
+      "path": "operating_curves_ham_validation.png",
+      "bytes": 165765,
+      "sha256": "da8e3d0e19df13c4196616a62445865cfa03ebd9d36f544c9d6f1562c3a9c7fc"
+    },
+    {
+      "path": "perceptual_hash_candidate_review.csv",
+      "bytes": 13666,
+      "sha256": "a462fb08003f30c549de4bacf88f05e226832e69a918c52b1a7ab152bfd01d48"
+    },
+    {
+      "path": "perceptual_hash_manual_review.md",
+      "bytes": 865,
+      "sha256": "786c525a104d4cb26643abcc1cee474e77171a14ddb63b4c4376df042ba44c39"
+    },
+    {
+      "path": "perceptual_hash_top30_contact_sheet.jpg",
+      "bytes": 535266,
+      "sha256": "334fd05f54a93d19633f5d5cb1115e807ecb0e2c694977e6389f534896fdc18d"
+    },
+    {
+      "path": "q2_strengthening_report.md",
+      "bytes": 3844,
+      "sha256": "fc8c48b316786898f5f17fd196fa34035d37496bf45b2791629d747ca1e1be9a"
+    },
+    {
+      "path": "runtime_and_integrity.json",
+      "bytes": 365,
+      "sha256": "5c7f56c23f42a8c4a3b75b9706e6fa0d5e0dd37ddecfc5d29c0c597ff00bf8e1"
+    },
+    {
+      "path": "simple_method_comparison.csv",
+      "bytes": 5682,
+      "sha256": "73901d69b72f5682bcd4f20729ff953a4cfeb700f75aa334fd29d63aef69b4b0"
+    },
+    {
+      "path": "theoretical_correction_limits.png",
+      "bytes": 49652,
+      "sha256": "fee14280bafe9787e859684d177f4158c9eee06f03eff4643a3aa33c5212b0a1"
+    },
+    {
+      "path": "theoretical_oracle_bounds.csv",
+      "bytes": 610,
+      "sha256": "a1ee443847a9aa6c3f4caa45050050423e5bc80d6882c0652a5f69345f5334c5"
+    },
+    {
+      "path": "validation_checks.json",
+      "bytes": 1011,
+      "sha256": "aba75201b71faa2567f55fba47b8ae6c19a9eb914662b34c7a4e2f6de8eaa3ae"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+image_id,lesion_id,true_label_index,true_label,gate_alpha,auxiliary_only_prediction_index,auxiliary_only_prediction,fixed_fusion_prediction_index,fixed_fusion_prediction,learned_fusion_prediction_index,learned_fusion_prediction,fixed_fusion_changed_label,fixed_fusion_wrong_to_correct,fixed_fusion_correct_to_wrong,learned_fusion_changed_label,learned_fusion_wrong_to_correct,learned_fusion_correct_to_wrong
+ISIC_0031537,HAM_0003877,2,bkl,0.26587546,4,mel,0,akiec,0,akiec,True,False,False,True,False,False
+ISIC_0027125,HAM_0003182,4,mel,0.29692388,4,mel,5,nv,4,mel,True,False,True,False,False,False
+ISIC_0032633,HAM_0007462,5,nv,0.3057411,4,mel,5,nv,4,mel,True,True,False,False,False,False

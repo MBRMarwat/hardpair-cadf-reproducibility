@@ -1,0 +1,5 @@
+method,parameter_count,count_scope,additional_over_auxiliary
+baseline,932199,backbone + normalization + seven-class head used for baseline inference,0
+auxiliary_only,933353,backbone + normalization + seven-class and two-class heads,0
+fixed_fusion,933353,multitask network; fixed fusion has no learned parameters,0
+learned_fusion,933359,multitask network + five-input logistic gate,6

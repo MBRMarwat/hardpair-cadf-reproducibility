@@ -1,0 +1,40 @@
+{
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "outputs/full_20epochs/test_probabilities.pt",
+      "sha256": "375d35732d798e8e5fea70709e0d3824bdc46b74511865a9f8fc1be9f0c88318",
+      "bytes": 127892
+    },
+    {
+      "path": "outputs/full_20epochs/cached_predictions.pt",
+      "sha256": "63ba4cc98f44f8bd66a0e0cfc26e26d3a5dd96cb88c7d86a362a089e9c20eec7",
+      "bytes": 419412
+    },
+    {
+      "path": "outputs/full_20epochs/pretrained_features.pt",
+      "sha256": "66c8ab722f856a8a33b9e7c10a7ddef13ade458009a987aac89d8d119c6cb0fc",
+      "bytes": 23595826
+    },
+    {
+      "path": "outputs/ham10000_splits.csv",
+      "sha256": "f00697d1ed59b98fd5205772c45c639c1ef62363c91d85f054699927f74d2bad",
+      "bytes": 1689673
+    },
+    {
+      "path": "bcn_external_evaluation/full/external_image_predictions.csv",
+      "sha256": "c765099e44a3dbe56886c86a5992d5bd17ab16a0557ca71e87c8125adf7b89b4",
+      "bytes": 7649119
+    },
+    {
+      "path": "bcn_external_evaluation/full/external_prediction_cache.pt",
+      "sha256": "39c4e740d74ac6cae5f957b887b749cbd77dd147c485a6be42a49aeb18dc4d59",
+      "bytes": 29693688
+    },
+    {
+      "path": "bcn_20k_train.csv",
+      "sha256": "0f219633f49c07b0a1c844c4faa0fa1fc26690743f2c44dc7337a7a4135bc40b",
+      "bytes": 945681
+    }
+  ]
+}

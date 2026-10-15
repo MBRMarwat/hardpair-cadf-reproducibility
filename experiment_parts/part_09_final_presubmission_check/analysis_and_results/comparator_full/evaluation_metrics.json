@@ -1,0 +1,132 @@
+{
+  "pair_balanced_accuracy": 0.6494814814814815,
+  "mel_sensitivity": 0.376,
+  "mel_to_nv": 58,
+  "nv_to_mel": 20,
+  "macro_f1": 0.6439924174243428,
+  "balanced_accuracy": 0.6848372931787077,
+  "mel_pr_auc": 0.5742997651709436,
+  "brier_score": 0.2989768749703085,
+  "ece_15": 0.030654066387969667,
+  "confusion_matrix": [
+    [
+      22,
+      4,
+      5,
+      0,
+      3,
+      1,
+      0
+    ],
+    [
+      5,
+      36,
+      4,
+      1,
+      2,
+      6,
+      1
+    ],
+    [
+      9,
+      7,
+      48,
+      2,
+      9,
+      18,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      1,
+      16,
+      0,
+      47,
+      58,
+      0
+    ],
+    [
+      0,
+      9,
+      21,
+      2,
+      20,
+      623,
+      0
+    ],
+    [
+      0,
+      1,
+      2,
+      0,
+      2,
+      2,
+      16
+    ]
+  ],
+  "per_class": {
+    "akiec": {
+      "precision": 0.5641025641025641,
+      "recall": 0.6285714285714286,
+      "f1": 0.5945945945945946,
+      "support": 35
+    },
+    "bcc": {
+      "precision": 0.6206896551724138,
+      "recall": 0.6545454545454545,
+      "f1": 0.6371681415929203,
+      "support": 55
+    },
+    "bkl": {
+      "precision": 0.5,
+      "recall": 0.5161290322580645,
+      "f1": 0.5079365079365079,
+      "support": 93
+    },
+    "df": {
+      "precision": 0.4444444444444444,
+      "recall": 1.0,
+      "f1": 0.6153846153846154,
+      "support": 4
+    },
+    "mel": {
+      "precision": 0.5662650602409639,
+      "recall": 0.376,
+      "f1": 0.4519230769230769,
+      "support": 125
+    },
+    "nv": {
+      "precision": 0.8799435028248588,
+      "recall": 0.922962962962963,
+      "f1": 0.900939985538684,
+      "support": 675
+    },
+    "vasc": {
+      "precision": 0.9411764705882353,
+      "recall": 0.6956521739130435,
+      "f1": 0.8,
+      "support": 23
+    }
+  },
+  "unrecoverable_melanoma_count": 17,
+  "unrecoverable_melanoma_rate": 0.136,
+  "temperature_fitted_on_fusion_split": 1.414554238319397,
+  "selected_epoch": 19,
+  "trainable_parameters": 3138851,
+  "total_parameters": 4016515,
+  "paired_vs_original_baseline": {
+    "mean_difference": -0.006126744467765093,
+    "ci_95_low": -0.06574171409010887,
+    "ci_95_high": 0.05097610019147394,
+    "estimand": "EfficientNet-B0 minus original HardPair-Net generalist pair-balanced accuracy"
+  }
+}

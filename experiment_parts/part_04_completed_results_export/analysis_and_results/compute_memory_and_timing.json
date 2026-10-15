@@ -1,0 +1,76 @@
+{
+  "hardware_profile": {
+    "device": "cuda",
+    "steps": 100.0,
+    "seconds_per_step": 0.02011858900252264,
+    "peak_allocated_gb": 0.09145736694335938,
+    "projected_hours_per_run": 0.09768692660113772
+  },
+  "measurements": [
+    {
+      "measurement": "training_step_time",
+      "stage": "saved_100_step_profile",
+      "value": 0.02011858900252264,
+      "unit": "seconds_per_step",
+      "status": "measured",
+      "notes": "Measured profile; excludes data loading, validation, checkpoints, and notebook overhead."
+    },
+    {
+      "measurement": "peak_allocated_gpu_memory",
+      "stage": "saved_100_step_profile",
+      "value": 0.09145736694335938,
+      "unit": "GiB",
+      "status": "measured",
+      "notes": "Peak allocated CUDA memory during the saved benchmark, not full-run peak VRAM."
+    },
+    {
+      "measurement": "full_run_peak_gpu_memory",
+      "stage": "full_20_epoch_training",
+      "value": "unavailable",
+      "unit": "GiB",
+      "status": "unavailable",
+      "notes": "Not logged and cannot be reconstructed."
+    },
+    {
+      "measurement": "training_wall_clock",
+      "stage": "baseline_20_epochs",
+      "value": 1821,
+      "unit": "seconds",
+      "status": "artifact_timestamp_estimate",
+      "notes": "Approximate 30:21 interval; no structured start/end timer was saved."
+    },
+    {
+      "measurement": "training_wall_clock",
+      "stage": "multitask_20_epochs",
+      "value": 1769,
+      "unit": "seconds",
+      "status": "artifact_timestamp_estimate",
+      "notes": "Approximate 29:29 interval; no structured start/end timer was saved."
+    },
+    {
+      "measurement": "prediction_cache_wall_clock",
+      "stage": "all_cached_fusion_validation_test_predictions",
+      "value": 262,
+      "unit": "seconds",
+      "status": "artifact_timestamp_estimate",
+      "notes": "Approximate 4:22 interval; not isolated held-out test inference latency."
+    },
+    {
+      "measurement": "held_out_test_inference_time",
+      "stage": "held_out_test_only",
+      "value": "unavailable",
+      "unit": "seconds",
+      "status": "unavailable",
+      "notes": "The original pipeline did not save a test-only inference timer."
+    },
+    {
+      "measurement": "checkpoint_verification_inference_time",
+      "stage": "6060_saved_image_model_cases",
+      "value": 110.94327920000069,
+      "unit": "seconds",
+      "status": "measured_diagnostic_verification",
+      "notes": "Later checkpoint/cache verification, not the original evaluation runtime."
+    }
+  ],
+  "availability_statement": "Exact original full-run stage timers and full-run peak GPU memory are unavailable."
+}

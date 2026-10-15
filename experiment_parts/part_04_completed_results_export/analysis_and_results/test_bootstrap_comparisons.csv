@@ -1,0 +1,3 @@
+partition,metric,candidate,reference,observed_difference,bootstrap_mean_difference,ci_95_low,ci_95_high,resamples,lesion_count,image_count,source
+held_out_test,pair_balanced_accuracy,fixed_fusion,auxiliary_only,-0.003259259259259295,-0.0033683584183454513,-0.013157904148101807,0.0021996542811393723,2000,747,1010,outputs/full_20epochs/metrics.json
+held_out_test,pair_balanced_accuracy,learned_fusion,auxiliary_only,0.0,0.0,0.0,0.0,2000,747,1010,outputs/full_20epochs/metrics.json

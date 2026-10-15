@@ -1,0 +1,11 @@
+{
+  "stage2_validation_dropout_active": true,
+  "evidence": {
+    "training_call": "code/cadfnet_v3/training.py:346 calls model.specialist_head.train()",
+    "validation_call": "code/cadfnet_v3/training.py:377 calls _head_validation()",
+    "validation_function": "code/cadfnet_v3/training.py:178 uses torch.no_grad() but does not call model.eval()"
+  },
+  "impact": "Stage 2 saved validation metrics and best-checkpoint selection are stochastic dropout-on measurements. Deterministic evaluation of the saved checkpoint may differ.",
+  "stage3_contrast": "Stage 3 image validation calls model.eval(), so its saved final-epoch rate reproduces deterministically.",
+  "source_modified": false
+}
