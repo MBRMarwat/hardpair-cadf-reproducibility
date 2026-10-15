@@ -2,6 +2,10 @@
 
 This repository snapshot supports the manuscript's reported HAM10000, BCN20000, HardPair-Net, CADF-Net v3, post-hoc audit, and final same-condition comparator results. It intentionally excludes original dermoscopic images and patient data.
 
+Public repository: <https://github.com/MBRMarwat/hardpair-cadf-reproducibility>
+
+Frozen submission evidence release: `v1.0-submission`
+
 ## Data
 
 - HAM10000: <https://doi.org/10.7910/DVN/DBW86T>; descriptor <https://doi.org/10.1038/sdata.2018.161>.
@@ -34,5 +38,5 @@ The organized `experiment_parts/*/analysis_and_results` directories contain the 
 - CADF A2 and A5 are smoke tests only.
 - Later audits are exploratory because the held-out cohorts had already been examined.
 
-Before publication, select a code license, replace author placeholders in the manuscript statements, tag the exact release, and archive that tag with a permanent DOI.
+Before publication, select a code license, replace author placeholders in the manuscript statements, and archive release `v1.0-submission` with a permanent DOI.
 

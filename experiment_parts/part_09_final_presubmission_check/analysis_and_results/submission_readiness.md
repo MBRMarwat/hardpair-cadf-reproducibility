@@ -4,7 +4,7 @@ Target checked: Pattern Analysis and Applications, 2026-10-15.
 
 ## Outcome
 
-The scientific audit is complete, and the data/code evidence is locally reproducible. The submission is **conditionally ready**, not yet administratively ready. No further model tuning is justified. The remaining blockers require author/repository information rather than more experiments.
+The scientific audit is complete, the data/code evidence is locally reproducible, and the unarchived repository is public. The submission is **conditionally ready**, not yet administratively ready. No further model tuning is justified. The remaining blockers require author information, a selected code license, and permanent DOI archival rather than more experiments.
 
 ## Journal-specific requirements checked
 
@@ -12,7 +12,7 @@ The scientific audit is complete, and the data/code evidence is locally reproduc
 - Analytical and experimental testing: supplied by the mathematical fusion checks, correction bounds, paired analyses, external cohort, and new same-condition comparator.
 - Same-condition comparison: the new EfficientNet-B0 comparator uses the frozen HAM10000 split and preprocessing. It is a contemporary architecture comparator, not a reproduction of every published method.
 - Replicable research: executable code, configs, seeds, split IDs, checkpoints, source hashes, prediction tables, and evaluation scripts exist.
-- Public repository: **not yet satisfied**. The journal says the code/data repository must be accessible, have an explanatory README, and its files must not be archived. Upload the prepared unarchived repository material to GitHub/Zenodo or an institutional repository and insert the permanent URL in the declarations.
+- Public repository: **satisfied** at <https://github.com/MBRMarwat/hardpair-cadf-reproducibility>. It contains unarchived code/data evidence and an explanatory README. Permanent DOI archival of release `v1.0-submission` remains pending.
 - Editable source: the current manuscript is a DOCX, but it contains only Introduction, Literature Review, and References. Methods, Results, Discussion, Conclusion, abstract, title page, and declarations still need to be assembled in the manuscript.
 - Abstract: must be 150-250 words.
 - Keywords: provide 4-6.
@@ -29,18 +29,18 @@ The scientific audit is complete, and the data/code evidence is locally reproduc
 4. competing-interests statement;
 5. ethics/consent wording appropriate to secondary analysis of public de-identified datasets and the authors' institution;
 6. selected code license;
-7. public, unarchived repository URL and a permanent release DOI;
+7. permanent DOI for release `v1.0-submission` (the public, unarchived repository URL is now available);
 8. confirmation of the ranking system required by the author's institution (SCImago/SJR and Clarivate JCR quartiles are not interchangeable).
 
 ## Draft statements requiring author review
 
 ### Data availability
 
-HAM10000 is publicly available through Harvard Dataverse at <https://doi.org/10.7910/DVN/DBW86T> and is described at <https://doi.org/10.1038/sdata.2018.161>. BCN20000 is publicly available through Figshare at <https://doi.org/10.6084/m9.figshare.24140028> under CC BY 4.0 and is described at <https://doi.org/10.1038/s41597-024-03387-w>. The exact lesion-disjoint split identifiers, derived predictions, summary data, and analysis scripts supporting this study will be deposited at **[INSERT PERMANENT REPOSITORY URL/DOI]**. Original dermoscopic images are not redistributed in the study repository.
+HAM10000 is publicly available through Harvard Dataverse at <https://doi.org/10.7910/DVN/DBW86T> and is described at <https://doi.org/10.1038/sdata.2018.161>. BCN20000 is publicly available through Figshare at <https://doi.org/10.6084/m9.figshare.24140028> under CC BY 4.0 and is described at <https://doi.org/10.1038/s41597-024-03387-w>. The exact lesion-disjoint split identifiers, derived predictions, summary data, and analysis scripts supporting this study are available at <https://github.com/MBRMarwat/hardpair-cadf-reproducibility>. The permanent archive DOI for release `v1.0-submission` will be added before publication. Original dermoscopic images are not redistributed in the study repository.
 
 ### Code availability
 
-Executable training, checkpoint-resume, inference, calibration, fusion, bootstrap, audit, and figure-generation code, together with frozen configurations and environment information, will be available at **[INSERT PUBLIC UNARCHIVED REPOSITORY URL]**. The release commit/tag used for the manuscript is **[INSERT TAG OR COMMIT]**.
+Executable training, checkpoint-resume, inference, calibration, fusion, bootstrap, audit, and figure-generation code, together with frozen configurations and environment information, are available at <https://github.com/MBRMarwat/hardpair-cadf-reproducibility>. The release tag used for the manuscript is `v1.0-submission`.
 
 ### Ethics
 
