@@ -4,7 +4,7 @@ This repository snapshot supports the manuscript's reported HAM10000, BCN20000, 
 
 Public repository: <https://github.com/MBRMarwat/hardpair-cadf-reproducibility>
 
-Frozen submission evidence release: `v1.0-submission`
+Current license-updated submission release: `v1.0.1-submission`
 
 ## Data
 
@@ -31,6 +31,10 @@ Every training workflow writes an atomic latest checkpoint at least hourly and a
 
 The organized `experiment_parts/*/analysis_and_results` directories contain the derived CSV/JSON/PNG evidence used in the tables and figures. The final mapping from numeric claims to source files is `experiment_parts/part_09_final_presubmission_check/analysis_and_results/claim_traceability.json`. Original image datasets are not redistributed. Selected CADF and comparator checkpoints are present so the audits can run; the complete checkpoint collection remains in the manuscript evidence ZIP.
 
+## License
+
+Except where otherwise noted, original material in this repository is licensed under the [Creative Commons Attribution 4.0 International license](LICENSE). Third-party software, pretrained weights, source datasets, and dataset images remain subject to their original licenses and terms. This repository does not relicense HAM10000 or BCN20000 images.
+
 ## Known limitations
 
 - The HAM split is lesion-disjoint; patient-disjointness is not verifiable from the supplied metadata.
@@ -38,5 +42,5 @@ The organized `experiment_parts/*/analysis_and_results` directories contain the 
 - CADF A2 and A5 are smoke tests only.
 - Later audits are exploratory because the held-out cohorts had already been examined.
 
-Before publication, select a code license, replace author placeholders in the manuscript statements, and archive release `v1.0-submission` with a permanent DOI.
+Before publication, replace author placeholders in the manuscript statements and archive the license-updated release with a permanent DOI.
 
